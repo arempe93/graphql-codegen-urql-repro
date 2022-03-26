@@ -1,0 +1,13 @@
+schema: schema.graphql
+documents: document.graphql
+generates:
+  graphql.d.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+  index.ts:
+    preset: "import-types"
+    presetConfig:
+      typesPath: "./graphql.d"
+    plugins:
+      - typescript-urql

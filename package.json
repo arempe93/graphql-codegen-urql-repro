@@ -1,0 +1,19 @@
+{
+  "name": "graphql-codegen-issue-template",
+  "version": "1.0.0",
+  "scripts": {
+    "generate": "yarn codegen",
+    "start": "graphql-codegen --config ./codegen.yml --watch",
+    "codegen": "graphql-codegen --config ./codegen.yml"
+  },
+  "dependencies": {
+    "@graphql-codegen/add": "^3.1.1",
+    "@graphql-codegen/cli": "^2.4.0",
+    "@graphql-codegen/import-types-preset": "2.1.15",
+    "@graphql-codegen/typescript": "2.4.8",
+    "@graphql-codegen/typescript-operations": "2.3.5",
+    "@graphql-codegen/typescript-urql": "3.5.6",
+    "graphql": "^16.2.0",
+    "urql": "^2.2.0"
+  }
+}
